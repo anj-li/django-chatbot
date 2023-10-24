@@ -3,7 +3,7 @@ FROM python:3.11.2-buster
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+COPY django-chatbot/requirements.txt/ requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . .
